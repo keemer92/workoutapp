@@ -251,7 +251,7 @@
                     userupperbodyWorkout,
                     userlowerbodyWorkout,
                 });
-            } else if (goal === 2 && fatPercentage >= 25) {
+            } else if (goal === 2 && fatPercentage >= 25 || goal === 2 && fatPercentage <= 25 || goal === 1 && fatPercentage >= 25) {
                 const fatlossWorkout = {
                     Monday: [...workoutDays.Monday],
                     Tuesday: [...workoutDays.Tuesday],
